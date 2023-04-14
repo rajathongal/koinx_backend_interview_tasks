@@ -58,7 +58,7 @@ const GetTransactionsByAddress = async (request, response) => {
                     result: transactionsResponse
                 });
             } else {
-                return response.status(200).json({
+                return response.status(204).json({
                     sucess: true,
                     message: 'No transactions were found',
                     result: []
