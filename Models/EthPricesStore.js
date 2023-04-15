@@ -6,10 +6,10 @@ const ethPricesSchema = new Schema({
         type: String,
         required: true,
     },
-    usd: {
-        type: String,
+    inr: {
+        type: Number,
         required: true,
     }
 }, {timestamps: true, strict: true});
 
-module.exports = model('ETHPrices', ethPricesSchema);
+module.exports = model('ETHPricesStore', ethPricesSchema);
