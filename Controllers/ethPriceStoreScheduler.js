@@ -5,7 +5,7 @@ const { nanoid } = require('nanoid');
 
 const startEthPriceCollection = async(request, response) => {
     try {
-        var task = cron.schedule('*/2 * * * *', async() => {
+        var task = cron.schedule('*/10 * * * *', async() => {
             const ethPriceInINR = await _getETHPrice()
             await ETHPricesStore.create({
                 _id: nanoid(),
