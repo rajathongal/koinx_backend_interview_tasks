@@ -39,3 +39,5 @@ server.use(require('./Routes/index'));
 server.listen(PORT, async () => {
     console.log(`App running on Port ${PORT}`);
 });
+
+module.exports = server;
