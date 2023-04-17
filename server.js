@@ -34,7 +34,9 @@ server.get("/health", (request, response) => {
     }
 
 });
-
+server.get('/', (request, response) => {
+    response.send('Koinx Interview Task🥳')
+  })
 server.use(require('./Routes/index'));
 server.listen(PORT, async () => {
     console.log(`App running on Port ${PORT}`);
