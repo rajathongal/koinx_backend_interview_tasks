@@ -2,6 +2,9 @@
   "name": "koinx_backend_interview_tasks",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "16.15.1"
+  },
   "repository": "https://github.com/rajathongal/koinx_backend_interview_tasks.git",
   "author": "rajathongal <reachme.rajathongal@gmail.com>",
   "license": "MIT",
